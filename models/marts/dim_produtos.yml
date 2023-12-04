@@ -1,0 +1,36 @@
+version: 2
+models:
+  - name: dim_produtos
+    description: Dimensão de produtos da Northwind. Uma linha por produto, com informações de categorias e fornecedores.
+    columns:
+      - name: id_produto
+        description: Chave primária da dimensão de produtos.
+        tests:
+          - not_null
+          - unique
+      - name: id_fornecedor
+        description: Chave estrangeira da tabela de fornecedor.
+
+      - name: id_categoria
+        description: chave estrangeira da tabela categoria
+       
+      - name: nome_produto
+        description: nome do produto da tabela produto
+      - name: quantidade_por_unidade
+        description: quantidade por unidade 
+      - name: preco_por_unidade
+        description: preco por unidade
+      - name: unidades_em_estoque
+        description: quantidade em estoque
+      - name: unidades_por_ordem
+        description: quantidade por ordem
+      - name: nivel_reabastecimento
+        description: nivel de abastecimento
+      - name: eh_discontinuado
+        description: coluna para saber abastecimento
+      - name: nome_categoria
+        description: nome categoria
+      - name: nome_fornecedor
+        description: nome fornecedor
+      - name: pais_fornecedor
+        description: pais do fornecedor
