@@ -23,3 +23,5 @@ sources:
             - not_null
 
     - name: order_details
+
+    - name: customers
