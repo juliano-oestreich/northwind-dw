@@ -12,3 +12,16 @@ sources:
             - not_null
     - name: categories
     - name: suppliers
+
+    - name: employees
+
+    - name: orders
+      columns:
+        - name: order_id
+          tests:
+            - unique
+            - not_null
+
+    - name: order_details
+
+    - name: customers
